@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+
+*, html {
+    font-family: "Raleway", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: url('https://cdn.discordapp.com/avatars/674869303790796811/9b31074694174adcee3e29356149bda7.webp?size=128');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    width: 500px;
+    height: auto;
+    min-height: 600px;
+    margin: 90px auto 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%; 
+}
+
+.container .card {
+    background-color: #333333;
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    margin: 0px auto 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+
+.container .card img {
+    margin: -30px auto 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+}
+
+.container .card .info-user {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 70%;
+}
+
+.info-user p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.info-user ul {
+    margin: 10px auto 0;
+}
+
+.info-user li {
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.ls-btn{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;  
+}
+
+.button {
+    width: 100%;
+    border-radius: 20px;
+    height: 70px;
+    background-color: hsla(0, 0%, 100%, 0.6);
+    margin: 20px auto 0;
+    display: grid;
+    grid-template-columns: 20% 75% 5%;
+    overflow: hidden;
+    border: solid 1px;
+    transition: .7s;
+    cursor: pointer;
+}
+
+
+.button img {
+    object-fit: cover;
+    max-width: 70px;
+    max-height: 70px;
+    border-right: solid 1px;
+    background-color: white;
+}
+
+.button p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto 5px auto;
+}
+
+.button:hover {
+    background-color: hsla(0, 0%, 100%, 0.9);
+}
+
