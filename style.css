@@ -83,7 +83,7 @@ a {
     width: calc(100% - 10px);
     border-radius: 20px;
     height: 70px;
-    background-color: hsla(0, 0%, 100%, 0.6);
+    background-color: hsla(0, 0%, 100%, 0.7);
     margin: 20px auto 0;
     display: grid;
     grid-template-columns: 20% 75% 5%;
@@ -100,6 +100,7 @@ a {
     max-height: 70px;
     border-right: solid 1px;
     background-color: white;
+    transition: border-width 0.7s ease;
 }
 
 .button p {
@@ -110,7 +111,11 @@ a {
 }
 
 .button:hover {
-    background-color: hsla(0, 0%, 100%, 0.9);
+    background-color: white;
+}
+
+.button:hover img {
+    border-right: none
 }
 
 *::-webkit-scrollbar {
