@@ -7,11 +7,12 @@
 }
 
 body {
-    background-image: url('https://globaluserfiles.com/media/4130_d21362a2a0e76400fe0ff65af88cae3df554cd81.jpeg/v1/w_0,h_0/28961-.jpeg');
+    background-image: url('imgs/2001Sfondo.jpg');
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(10px);
-    overflow: hidden;
+    background-repeat: no-repeat;
+    background-color: black;
 }
 
 .container {
@@ -19,7 +20,7 @@ body {
     max-width: 600px;
     height: auto;
     min-height: 600px;
-    margin: 90px auto 0;
+    margin: -40px auto 0;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%; 
@@ -72,10 +73,6 @@ body {
     overflow-x: hidden;
 }
 
-.ls-btn::-webkit-scrollbar {
-    display: none;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -83,10 +80,10 @@ a {
 }
 
 .button {
-    width: 100%;
+    width: calc(100% - 10px);
     border-radius: 20px;
     height: 70px;
-    background-color: hsla(0, 0%, 100%, 0.6);
+    background-color: hsla(0, 0%, 100%, 0.7);
     margin: 20px auto 0;
     display: grid;
     grid-template-columns: 20% 75% 5%;
@@ -103,6 +100,7 @@ a {
     max-height: 70px;
     border-right: solid 1px;
     background-color: white;
+    transition: border-width 0.7s ease;
 }
 
 .button p {
@@ -113,15 +111,46 @@ a {
 }
 
 .button:hover {
-    background-color: hsla(0, 0%, 100%, 0.9);
+    background-color: white;
 }
 
-.snow,
+.button:hover img {
+    border-right: none
+}
+
+*::-webkit-scrollbar {
+    width: 10px;    
+    }
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgba(211, 211, 211, 1);
+    border-radius: 10px;
+    opacity: 0.5;
+}
+*::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(167, 167, 167, 1);
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: rgba(167, 167, 167, 1);
+}
+
+*::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+
+/*.snow,
 .snow:before,
 .snow:after {
     z-index: -1;
     position: absolute;
-    top: -600px;
+    top: -6000px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -163,4 +192,4 @@ a {
     to {
         transform: translateY(600px);
     }
-}
+}*/
